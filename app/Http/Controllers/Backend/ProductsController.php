@@ -1,30 +1,30 @@
 <?php
 
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\Backend;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-use App\Product;
-use App\ProductImage;
+use App\Models\Product;
+use App\Models\ProductImage;
 use Image;
 
-class AdminProductController extends Controller
+class ProductsController extends Controller
 {
 
     public function index(){
         $products = Product::orderBy('id','desc')->get();
-        return view('admin.pages.product.index')->with('products',$products);
+        return view('backend.pages.product.index')->with('products',$products);
     }
 
    public function create(){
-    return view('admin.pages.product.create');
+    return view('backend.pages.product.create');
 }
 
 
 public function edit($id){
     $product = Product::find($id);
-    return view('admin.pages.product.edit')->with('product',$product);
+    return view('backend.pages.product.edit')->with('product',$product);
 }
 
 public function delete($id){
@@ -143,3 +143,6 @@ public function update(Request $request,$id){
 }
 
 }
+//php artisan config:cache
+// php artisan view:clear
+//composer dump-autoload

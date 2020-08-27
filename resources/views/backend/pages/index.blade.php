@@ -1,8 +1,8 @@
-@extends('admin.layouts.master')
+@extends('backend.layouts.master')
 @section('content')
 <div class="page-container">
     <!-- HEADER DESKTOP-->
-@include('admin.partials.header')
+@include('backend.partials.header')
     <!-- HEADER DESKTOP-->
 
     <!-- MAIN CONTENT-->

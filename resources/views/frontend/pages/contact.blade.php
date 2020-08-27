@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('frontend.layouts.master')
 @section('content')
     {{--Contact page--}}
     <div class="container margin-top-20">

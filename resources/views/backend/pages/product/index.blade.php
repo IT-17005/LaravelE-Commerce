@@ -1,8 +1,8 @@
-@extends('admin.layouts.master')
+@extends('backend.layouts.master')
 @section('content')
     <div class="page-container">
         <!-- HEADER DESKTOP-->
-        @include('admin.partials.header')
+        @include('backend.partials.header')
         <!-- HEADER DESKTOP-->
 
         <!-- MAIN CONTENT-->
@@ -15,7 +15,7 @@
                             <h3>Manage Product</h3>
                         </div>
                         <div class="card-body">
-                            @include('admin.partials.messages')
+                            @include('backend.partials.messages')
                             <table class="table table-hover table-striped">
                                 <tr>
                                     <th>#</th>
