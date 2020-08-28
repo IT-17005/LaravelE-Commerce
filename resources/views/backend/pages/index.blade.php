@@ -1,13 +1,8 @@
 @extends('backend.layouts.master')
 @section('content')
 <div class="page-container">
-    <!-- HEADER DESKTOP-->
-@include('backend.partials.header')
-    <!-- HEADER DESKTOP-->
-
     <!-- MAIN CONTENT-->
     <div class="main-content">
-        <div class="section__content section__content--p30">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -544,10 +539,8 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
     <!-- END MAIN CONTENT-->
-    <!-- END PAGE CONTAINER-->
 </div>
 @endsection
 
