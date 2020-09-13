@@ -209,6 +209,19 @@
                     </ul>
                 </li>
 
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-copy"></i>Manage Category</a>
+                    <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                        <li>
+                            <a href="{{route('admin.categories')}}">Category List</a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.category.create')}}">Add Category</a>
+                        </li>
+                    </ul>
+                </li>
+
             </ul>
         </div>
     </nav>

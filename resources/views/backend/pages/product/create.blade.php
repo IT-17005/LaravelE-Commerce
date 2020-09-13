@@ -12,7 +12,7 @@
                         </div>
                         <div class="card-body">
                             <form action={{ route('admin.product.store') }} method="post" enctype="multipart/form-data">
-                                {{ csrf_field() }}
+                                @csrf
                                 @include('backend.partials.messages')
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Title</label>
